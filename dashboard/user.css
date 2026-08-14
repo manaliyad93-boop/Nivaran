@@ -1,0 +1,870 @@
+/* =================================
+   NIVARAN - USER DASHBOARD
+   Maroon + Rose Gold + Off-White Theme
+================================= */
+
+
+/* =================================
+   COLOR PALETTE
+================================= */
+
+:root {
+    --burgundy-dark: #1F0208;
+    --deep-maroon: #30000B;
+    --velvet-wine: #5A0010;
+    --wine-vibrant: #880B22;
+    --maroon-light: #A81230;
+
+    --rose-gold: #EBB5BA;
+    --rose-gold-light: #FCE8EA;
+
+    --off-white: #FAF6F0;
+    --cream: #F6EFE8;
+    --white: #FFFFFF;
+
+    --text-dark: #26191B;
+    --text-muted: #75666A;
+    --text-soft: #98888C;
+
+    --border: #E6D7D0;
+    --border-light: #EDE2DC;
+
+    --card-bg: #FFFFFF;
+    --card-soft: #FCF8F5;
+}
+
+
+/* =================================
+   GLOBAL
+================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: var(--off-white);
+    color: var(--text-dark);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =================================
+   MAIN SCREEN
+================================= */
+
+.screen {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 10% 5%,
+            rgba(235, 181, 186, 0.20),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(136, 11, 34, 0.08),
+            transparent 30%
+        ),
+        var(--off-white);
+
+    padding-bottom: 50px;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.header {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.secure {
+    color: var(--velvet-wine);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.logo {
+    margin-top: 3px;
+
+    color: var(--burgundy-dark);
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+}
+
+.logo span {
+    background: linear-gradient(
+        135deg,
+        var(--wine-vibrant),
+        var(--velvet-wine)
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+    margin-top: 5px;
+
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+/* =================================
+   DASHBOARD
+================================= */
+
+.dashboard {
+    width: min(1100px, 90%);
+    margin: 35px auto 0;
+}
+
+
+/* =================================
+   WELCOME SECTION
+================================= */
+
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.welcome-section h2 {
+    color: var(--burgundy-dark);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.welcome-section p {
+    margin-top: 6px;
+
+    color: var(--text-muted);
+    font-size: 15px;
+}
+
+
+/* =================================
+   SUBMIT BUTTON
+================================= */
+
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 175px;
+    height: 42px;
+
+    padding: 0 20px;
+
+    background: linear-gradient(
+        135deg,
+        var(--wine-vibrant),
+        var(--velvet-wine)
+    );
+
+    border: 1px solid var(--rose-gold);
+    border-radius: 8px;
+
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 6px 18px rgba(90, 0, 16, 0.22);
+
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+
+    background: linear-gradient(
+        135deg,
+        var(--maroon-light),
+        var(--wine-vibrant)
+    );
+
+    box-shadow:
+        0 8px 24px rgba(90, 0, 16, 0.30);
+}
+
+
+/* =================================
+   SUMMARY CARDS
+================================= */
+
+.summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 28px;
+}
+
+.summary-card {
+    display: flex;
+    align-items: center;
+
+    min-height: 95px;
+
+    padding: 18px;
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 18px rgba(31, 2, 8, 0.05);
+
+    transition: 0.2s ease;
+}
+
+.summary-card:hover {
+    border-color: var(--rose-gold);
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 24px rgba(90, 0, 16, 0.09);
+}
+
+.summary-card h3 {
+    color: var(--burgundy-dark);
+    font-size: 25px;
+    line-height: 28px;
+}
+
+.summary-card p {
+    margin-top: 4px;
+
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+
+/* =================================
+   SUMMARY ICONS
+================================= */
+
+.summary-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    margin-right: 13px;
+
+    border-radius: 8px;
+
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
+/* Total */
+
+.summary-icon.blue {
+    background: rgba(136, 11, 34, 0.10);
+    color: var(--wine-vibrant);
+}
+
+
+/* Pending */
+
+.summary-icon.yellow {
+    background: rgba(210, 150, 50, 0.13);
+    color: #B87912;
+}
+
+
+/* In Progress */
+
+.summary-icon.orange {
+    background: rgba(170, 76, 38, 0.12);
+    color: #A64B26;
+}
+
+
+/* Resolved */
+
+.summary-icon.green {
+    background: rgba(58, 130, 82, 0.12);
+    color: #3A8252;
+}
+
+
+/* =================================
+   COMMON SECTION
+================================= */
+
+.grievances-section,
+.quick-actions,
+.notification-section {
+    margin-top: 25px;
+
+    padding: 24px;
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(31, 2, 8, 0.045);
+}
+
+
+/* =================================
+   SECTION HEADING
+================================= */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.section-heading h2,
+.quick-actions > h2 {
+    color: var(--burgundy-dark);
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.section-heading p {
+    margin-top: 5px;
+
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.view-all {
+    color: var(--wine-vibrant);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.view-all:hover {
+    color: var(--burgundy-dark);
+    text-decoration: underline;
+}
+
+
+/* =================================
+   GRIEVANCE CARD
+================================= */
+
+.grievance-card {
+    display: grid;
+
+    grid-template-columns:
+        1fr 150px 75px;
+
+    align-items: center;
+
+    gap: 15px;
+
+    min-height: 80px;
+
+    padding: 15px 16px;
+
+    margin-top: 10px;
+
+    background: var(--card-soft);
+
+    border: 1px solid var(--border-light);
+    border-left: 3px solid var(--wine-vibrant);
+
+    border-radius: 9px;
+
+    transition: 0.2s ease;
+}
+
+.grievance-card:hover {
+    background: #FFFFFF;
+
+    border-left-color: var(--rose-gold);
+
+    box-shadow:
+        0 5px 16px rgba(90, 0, 16, 0.07);
+}
+
+
+/* =================================
+   GRIEVANCE INFORMATION
+================================= */
+
+.grievance-id {
+    display: inline-block;
+
+    margin-bottom: 5px;
+
+    color: var(--wine-vibrant);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.grievance-main h3 {
+    color: var(--text-dark);
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.grievance-main p {
+    margin-top: 5px;
+
+    color: var(--text-soft);
+
+    font-size: 12px;
+}
+
+
+/* =================================
+   STATUS
+================================= */
+
+.grievance-status {
+    text-align: center;
+}
+
+.status {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.grievance-status p {
+    margin-top: 6px;
+
+    color: var(--text-soft);
+
+    font-size: 10px;
+}
+
+
+/* =================================
+   PENDING
+================================= */
+
+.status.pending {
+    background: rgba(210, 150, 50, 0.10);
+    border: 1px solid rgba(210, 150, 50, 0.30);
+
+    color: #A66D0A;
+}
+
+
+/* =================================
+   IN PROGRESS
+================================= */
+
+.status.progress {
+    background: rgba(136, 11, 34, 0.09);
+    border: 1px solid rgba(136, 11, 34, 0.25);
+
+    color: var(--wine-vibrant);
+}
+
+
+/* =================================
+   RESOLVED
+================================= */
+
+.status.resolved {
+    background: rgba(58, 130, 82, 0.10);
+    border: 1px solid rgba(58, 130, 82, 0.28);
+
+    color: #347348;
+}
+
+
+/* =================================
+   TRACK BUTTON
+================================= */
+
+.track-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65px;
+    height: 30px;
+
+    background: transparent;
+
+    border: 1px solid var(--wine-vibrant);
+    border-radius: 5px;
+
+    color: var(--wine-vibrant);
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.track-btn:hover {
+    background: var(--wine-vibrant);
+    color: var(--white);
+}
+
+
+/* =================================
+   QUICK ACTIONS
+================================= */
+
+.quick-actions > h2 {
+    margin-bottom: 18px;
+}
+
+.action-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+.action-card {
+    display: flex;
+    align-items: center;
+
+    min-height: 75px;
+
+    padding: 14px;
+
+    background: var(--card-soft);
+
+    border: 1px solid var(--border-light);
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.action-card:hover {
+    border-color: var(--rose-gold);
+
+    transform: translateY(-2px);
+
+    background: #FFFFFF;
+
+    box-shadow:
+        0 5px 16px rgba(90, 0, 16, 0.07);
+}
+
+.action-card h3 {
+    color: var(--text-dark);
+
+    font-size: 13px;
+}
+
+.action-card p {
+    margin-top: 4px;
+
+    color: var(--text-soft);
+
+    font-size: 11px;
+}
+
+
+/* =================================
+   ACTION ICON
+================================= */
+
+.action-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    flex-shrink: 0;
+
+    margin-right: 10px;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Submit */
+
+.action-icon.blue {
+    background: rgba(136, 11, 34, 0.10);
+    color: var(--wine-vibrant);
+}
+
+
+/* My Grievances */
+
+.action-icon.purple {
+    background: rgba(111, 55, 83, 0.11);
+    color: #713753;
+}
+
+
+/* Notifications */
+
+.action-icon.yellow {
+    background: rgba(210, 150, 50, 0.12);
+    color: #A66D0A;
+}
+
+
+/* Profile */
+
+.action-icon.green {
+    background: rgba(58, 130, 82, 0.11);
+    color: #347348;
+}
+
+
+/* =================================
+   NOTIFICATION
+================================= */
+
+.notification-card {
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+
+    background: var(--card-soft);
+
+    border: 1px solid var(--border-light);
+    border-left: 3px solid var(--wine-vibrant);
+
+    border-radius: 8px;
+}
+
+.notification-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    margin-right: 13px;
+
+    background: rgba(136, 11, 34, 0.10);
+
+    border: 1px solid rgba(136, 11, 34, 0.25);
+
+    border-radius: 50%;
+
+    color: var(--wine-vibrant);
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.notification-card h3 {
+    color: var(--text-dark);
+
+    font-size: 13px;
+}
+
+.notification-card p {
+    margin-top: 4px;
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+}
+
+.notification-card span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: var(--text-soft);
+
+    font-size: 10px;
+}
+
+
+/* =================================
+   FOOTER ACTIONS
+================================= */
+
+.footer-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 30px;
+    padding-top: 20px;
+
+    border-top: 1px solid var(--border);
+}
+
+.footer-actions a {
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.footer-actions a:hover {
+    color: var(--wine-vibrant);
+}
+
+.footer-actions .logout {
+    color: var(--wine-vibrant);
+}
+
+.footer-actions .logout:hover {
+    color: var(--maroon-light);
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .summary {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .action-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .header,
+    .dashboard {
+        width: 92%;
+    }
+
+    .welcome-section {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .grievance-card {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .grievance-status {
+        text-align: left;
+    }
+
+    .track-btn {
+        width: 100%;
+    }
+
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .notification-card {
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 32px;
+    }
+
+    .welcome-section h2 {
+        font-size: 24px;
+    }
+
+    .grievances-section,
+    .quick-actions,
+    .notification-section {
+        padding: 17px;
+    }
+
+}

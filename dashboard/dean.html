@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NIVARAN - Dean Dashboard</title>
+
+    <link rel="stylesheet" href="dean.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         HEADER / NAVBAR
+    ========================================== -->
+
+    <header class="dashboard-header">
+
+        <div class="header-container">
+
+
+            <!-- LOGO -->
+
+            <div class="logo-section">
+
+                <div class="logo-box">
+                    NIV
+                </div>
+
+                <div class="univ-title">
+
+                    <h2>NIVARAN</h2>
+
+                    <p>
+                        Grievance Redressal System
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="nav-links">
+
+                <a href="dean.html">
+                    Dashboard
+                </a>
+
+                <a href="#">
+                    All Grievances
+                </a>
+
+                <a href="#">
+                    Departments
+                </a>
+
+                <a href="#">
+                    Reports
+                </a>
+
+            </nav>
+
+
+            <!-- USER -->
+
+            <div class="user-section">
+
+                <span class="user-icon">
+                    🏛️
+                </span>
+
+                <span class="user-name">
+                    Dean
+                </span>
+
+                <a href="index.html" class="logout">
+                    Logout
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         MAIN DASHBOARD
+    ========================================== -->
+
+    <main class="dashboard">
+
+
+        <!-- =========================================
+             WELCOME SECTION
+        ========================================== -->
+
+        <section class="welcome-section">
+
+            <div>
+
+                <h1>
+                    Welcome, Dean 👋
+                </h1>
+
+                <p>
+                    Monitor, review and manage grievances across the institution.
+                </p>
+
+            </div>
+
+
+            <a href="#" class="report-btn">
+                📊 View Reports
+            </a>
+
+        </section>
+
+
+
+        <!-- =========================================
+             STATISTICS
+        ========================================== -->
+
+        <section class="stats-grid">
+
+
+            <!-- TOTAL GRIEVANCES -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon total-icon">
+                    📋
+                </div>
+
+                <div class="stat-info">
+
+                    <h3>
+                        Total Grievances
+                    </h3>
+
+                    <span>
+                        156
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PENDING -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon pending-icon">
+                    ⏳
+                </div>
+
+                <div class="stat-info">
+
+                    <h3>
+                        Pending Review
+                    </h3>
+
+                    <span>
+                        28
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- IN PROGRESS -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon progress-icon">
+                    🔄
+                </div>
+
+                <div class="stat-info">
+
+                    <h3>
+                        In Progress
+                    </h3>
+
+                    <span>
+                        41
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESOLVED -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon resolved-icon">
+                    ✅
+                </div>
+
+                <div class="stat-info">
+
+                    <h3>
+                        Resolved
+                    </h3>
+
+                    <span>
+                        87
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             QUICK OVERVIEW
+        ========================================== -->
+
+        <section class="overview-grid">
+
+
+            <!-- HIGH PRIORITY -->
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+                    ⚠️
+                </div>
+
+                <div>
+
+                    <h3>
+                        High Priority
+                    </h3>
+
+                    <p>
+                        Grievances requiring immediate attention
+                    </p>
+
+                    <strong>
+                        07
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- AWAITING ACTION -->
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+                    🔔
+                </div>
+
+                <div>
+
+                    <h3>
+                        Awaiting Action
+                    </h3>
+
+                    <p>
+                        Grievances waiting for authority response
+                    </p>
+
+                    <strong>
+                        12
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACTIVE DEPARTMENTS -->
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+                    🏢
+                </div>
+
+                <div>
+
+                    <h3>
+                        Active Departments
+                    </h3>
+
+                    <p>
+                        Departments currently handling grievances
+                    </p>
+
+                    <strong>
+                        09
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             RECENT GRIEVANCES
+        ========================================== -->
+
+        <section class="grievances-section">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Recent Grievances
+                    </h2>
+
+                    <p>
+                        Review the latest grievances submitted by users.
+                    </p>
+
+                </div>
+
+
+                <a href="#" class="view-all">
+                    View All →
+                </a>
+
+            </div>
+
+
+
+            <!-- TABLE -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Grievance ID
+                            </th>
+
+                            <th>
+                                User
+                            </th>
+
+                            <th>
+                                Subject
+                            </th>
+
+                            <th>
+                                Department
+                            </th>
+
+                            <th>
+                                Priority
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- GRIEVANCE 1 -->
+
+                        <tr>
+
+                            <td>
+                                NIV-2026-001
+                            </td>
+
+                            <td>
+                                Rahul Sharma
+                            </td>
+
+                            <td>
+                                Library Facilities
+                            </td>
+
+                            <td>
+                                Library
+                            </td>
+
+                            <td>
+
+                                <span class="priority high">
+                                    High
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status pending">
+                                    Pending
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <a href="#" class="action-btn">
+                                    Review
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- GRIEVANCE 2 -->
+
+                        <tr>
+
+                            <td>
+                                NIV-2026-002
+                            </td>
+
+                            <td>
+                                Priya Singh
+                            </td>
+
+                            <td>
+                                Hostel Maintenance
+                            </td>
+
+                            <td>
+                                Hostel
+                            </td>
+
+                            <td>
+
+                                <span class="priority medium">
+                                    Medium
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status progress">
+                                    In Progress
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <a href="#" class="action-btn">
+                                    Review
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- GRIEVANCE 3 -->
+
+                        <tr>
+
+                            <td>
+                                NIV-2026-003
+                            </td>
+
+                            <td>
+                                Aman Verma
+                            </td>
+
+                            <td>
+                                Internet Connectivity
+                            </td>
+
+                            <td>
+                                IT Department
+                            </td>
+
+                            <td>
+
+                                <span class="priority low">
+                                    Low
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status resolved">
+                                    Resolved
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <a href="#" class="action-btn">
+                                    View
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- GRIEVANCE 4 -->
+
+                        <tr>
+
+                            <td>
+                                NIV-2026-004
+                            </td>
+
+                            <td>
+                                Neha Gupta
+                            </td>
+
+                            <td>
+                                Examination Schedule
+                            </td>
+
+                            <td>
+                                Examination Cell
+                            </td>
+
+                            <td>
+
+                                <span class="priority high">
+                                    High
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status pending">
+                                    Pending
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <a href="#" class="action-btn">
+                                    Review
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             LOWER DASHBOARD GRID
+        ========================================== -->
+
+        <section class="lower-dashboard">
+
+
+            <!-- =====================================
+                 DEPARTMENT OVERVIEW
+            ====================================== -->
+
+            <div class="department-section">
+
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Department Overview
+                        </h2>
+
+                        <p>
+                            Current grievance distribution across departments.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="department-grid">
+
+
+                    <!-- EXAMINATION -->
+
+                    <div class="department-card">
+
+                        <div class="department-header">
+
+                            <h3>
+                                Examination Cell
+                            </h3>
+
+                            <span>
+                                32 Grievances
+                            </span>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill"
+                                 style="width: 75%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HOSTEL -->
+
+                    <div class="department-card">
+
+                        <div class="department-header">
+
+                            <h3>
+                                Hostel
+                            </h3>
+
+                            <span>
+                                27 Grievances
+                            </span>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill"
+                                 style="width: 62%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LIBRARY -->
+
+                    <div class="department-card">
+
+                        <div class="department-header">
+
+                            <h3>
+                                Library
+                            </h3>
+
+                            <span>
+                                21 Grievances
+                            </span>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill"
+                                 style="width: 48%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- IT -->
+
+                    <div class="department-card">
+
+                        <div class="department-header">
+
+                            <h3>
+                                IT Department
+                            </h3>
+
+                            <span>
+                                18 Grievances
+                            </span>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill"
+                                 style="width: 40%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 WORKLOAD
+            ====================================== -->
+
+            <div class="workload-section">
+
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Workload
+                        </h2>
+
+                        <p>
+                            Current cases assigned to authorities.
+                        </p>
+
+                    </div>
+
+
+                    <a href="#" class="view-all">
+                        Details
+                    </a>
+
+                </div>
+
+
+
+                <div class="workload-card">
+
+
+                    <!-- ASSISTANT DEAN -->
+
+                    <div class="workload-item">
+
+                        <div class="workload-info">
+
+                            <span>
+                                Assistant Dean
+                            </span>
+
+                            <strong>
+                                12 cases
+                            </strong>
+
+                        </div>
+
+                        <div class="workload-progress">
+
+                            <div class="workload-fill assistant-fill"
+                                 style="width: 72%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ASSOCIATE DEAN -->
+
+                    <div class="workload-item">
+
+                        <div class="workload-info">
+
+                            <span>
+                                Associate Dean
+                            </span>
+
+                            <strong>
+                                08 cases
+                            </strong>
+
+                        </div>
+
+                        <div class="workload-progress">
+
+                            <div class="workload-fill associate-fill"
+                                 style="width: 52%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DEAN R&D -->
+
+                    <div class="workload-item">
+
+                        <div class="workload-info">
+
+                            <span>
+                                Dean R&D
+                            </span>
+
+                            <strong>
+                                04 cases
+                            </strong>
+
+                        </div>
+
+                        <div class="workload-progress">
+
+                            <div class="workload-fill research-fill"
+                                 style="width: 32%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             FOOTER
+        ========================================== -->
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 NIVARAN | Dean Administration Dashboard
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

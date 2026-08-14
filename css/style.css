@@ -1,0 +1,726 @@
+/* =========================================================
+   NIVARAN - LOGIN / ROLE SELECTION
+   MAROON + CHAMPAGNE GOLD + IVORY
+========================================================= */
+
+
+/* =========================================================
+   COLOR PALETTE
+========================================================= */
+
+:root {
+
+    --maroon-dark: #26050D;
+    --maroon-deep: #350914;
+    --maroon: #4A0E1B;
+    --maroon-light: #64172A;
+    --maroon-accent: #7A1F32;
+
+    --champagne: #D6B36A;
+    --champagne-light: #E8D6A8;
+    --champagne-soft: #F3E8CC;
+
+    --ivory: #FFFDF5;
+    --ivory-warm: #F8F2E5;
+    --ivory-soft: #FBF8F0;
+
+    --text-dark: #2E2527;
+    --text-muted: #756A6D;
+
+    --white: #FFFFFF;
+
+    --border: #E4DAC8;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    background: var(--ivory);
+
+    color: var(--text-dark);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.container {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 75px 20px 90px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(214, 179, 106, 0.15),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(74, 14, 27, 0.07),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            var(--ivory),
+            var(--ivory-warm)
+        );
+}
+
+
+/* =========================================================
+   AMBIENT DECORATION
+========================================================= */
+
+.ambient-glow {
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    border-radius: 50%;
+
+    top: -260px;
+
+    right: -170px;
+
+    border:
+        1px solid
+        rgba(214, 179, 106, 0.25);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SECOND DECORATIVE CIRCLE
+========================================================= */
+
+.container::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 360px;
+
+    height: 360px;
+
+    border-radius: 50%;
+
+    bottom: -250px;
+
+    left: -170px;
+
+    border:
+        1px solid
+        rgba(74, 14, 27, 0.08);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.badge {
+
+    display: inline-block;
+
+    padding: 8px 20px;
+
+    margin-bottom: 20px;
+
+    background:
+        rgba(74, 14, 27, 0.06);
+
+    color: var(--maroon);
+
+    border:
+        1px solid
+        rgba(214, 179, 106, 0.75);
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+
+    box-shadow:
+        0 4px 15px
+        rgba(74, 14, 27, 0.05);
+}
+
+
+/* =========================================================
+   NIVARAN TITLE
+========================================================= */
+
+.header h1 {
+
+    color: var(--maroon-dark);
+
+    font-size: 50px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   CHAMPAGNE UNDERLINE
+========================================================= */
+
+.header h1::after {
+
+    content: "";
+
+    display: block;
+
+    width: 55px;
+
+    height: 3px;
+
+    margin: 15px auto 0;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--champagne),
+            var(--champagne-light)
+        );
+}
+
+
+/* =========================================================
+   HEADER DESCRIPTION
+========================================================= */
+
+.header p {
+
+    max-width: 650px;
+
+    margin: 18px auto 0;
+
+    color: var(--text-muted);
+
+    font-size: 17px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   LOGIN OPTIONS
+========================================================= */
+
+.login-options {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   LOGIN CARD
+========================================================= */
+
+.login-card {
+
+    position: relative;
+
+    background:
+        rgba(255, 255, 255, 0.96);
+
+    padding: 38px 32px;
+
+    border-radius: 16px;
+
+    /* SAME TOP LINE FOR BOTH CARDS */
+    border-top:
+        4px solid
+        var(--maroon);
+
+    border-right:
+        1px solid
+        var(--border);
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    border-left:
+        1px solid
+        var(--border);
+
+    box-shadow:
+        0 12px 30px
+        rgba(52, 9, 20, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+    text-align: left;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.login-card:hover {
+
+    transform: translateY(-7px);
+
+    border-right-color:
+        rgba(214, 179, 106, 0.75);
+
+    border-bottom-color:
+        rgba(214, 179, 106, 0.75);
+
+    border-left-color:
+        rgba(214, 179, 106, 0.75);
+
+    box-shadow:
+        0 18px 40px
+        rgba(52, 9, 20, 0.11);
+}
+
+
+/* =========================================================
+   REMOVE OLD HIGHLIGHT DIFFERENCE
+========================================================= */
+
+.login-card.highlight {
+
+    border-top:
+        4px solid
+        var(--maroon);
+}
+
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.card-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--ivory-warm),
+            var(--champagne-soft)
+        );
+
+    color: var(--maroon);
+
+    border:
+        1px solid
+        rgba(214, 179, 106, 0.55);
+
+    border-radius: 13px;
+
+    font-size: 27px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(74, 14, 27, 0.05);
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.login-card h2 {
+
+    color: var(--maroon-dark);
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.login-card p {
+
+    color: var(--text-muted);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    min-height: 52px;
+
+    margin-bottom: 26px;
+}
+
+
+/* =========================================================
+   COMMON BUTTON
+========================================================= */
+
+.btn {
+
+    width: 100%;
+
+    padding: 14px 20px;
+
+    border-radius: 9px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+
+    border: none;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   USER LOGIN BUTTON
+========================================================= */
+
+.btn-primary {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--maroon),
+            var(--maroon-light)
+        );
+
+    color: var(--white);
+
+    border:
+        1px solid
+        rgba(214, 179, 106, 0.35);
+
+    box-shadow:
+        0 7px 18px
+        rgba(74, 14, 27, 0.18);
+}
+
+
+.btn-primary:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--maroon-light),
+            var(--maroon-accent)
+        );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px
+        rgba(74, 14, 27, 0.25);
+}
+
+
+/* =========================================================
+   AUTHORITY LOGIN BUTTON
+========================================================= */
+
+.btn-secondary {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--champagne),
+            #C59E54
+        );
+
+    color: var(--maroon-dark);
+
+    border:
+        1px solid
+        rgba(130, 91, 28, 0.25);
+
+    box-shadow:
+        0 7px 18px
+        rgba(176, 137, 59, 0.18);
+}
+
+
+.btn-secondary:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--champagne-light),
+            var(--champagne)
+        );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px
+        rgba(176, 137, 59, 0.25);
+}
+
+
+/* =========================================================
+   BUTTON ACTIVE
+========================================================= */
+
+.btn:active {
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .container {
+
+        padding:
+            55px
+            20px
+            70px;
+    }
+
+
+    .header {
+
+        margin-bottom: 40px;
+    }
+
+
+    .header h1 {
+
+        font-size: 42px;
+    }
+
+
+    .header p {
+
+        font-size: 16px;
+    }
+
+
+    .login-options {
+
+        grid-template-columns: 1fr;
+
+        max-width: 550px;
+    }
+
+
+    .login-card {
+
+        padding:
+            32px
+            28px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+
+        padding:
+            42px
+            15px
+            55px;
+    }
+
+
+    .badge {
+
+        font-size: 10px;
+
+        padding:
+            7px
+            14px;
+
+        letter-spacing: 0.8px;
+    }
+
+
+    .header h1 {
+
+        font-size: 34px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .header p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+
+    .login-options {
+
+        gap: 20px;
+    }
+
+
+    .login-card {
+
+        padding:
+            27px
+            22px;
+
+        border-radius: 14px;
+    }
+
+
+    .card-icon {
+
+        width: 54px;
+
+        height: 54px;
+
+        font-size: 24px;
+    }
+
+
+    .login-card h2 {
+
+        font-size: 21px;
+    }
+
+
+    .login-card p {
+
+        font-size: 14px;
+
+        min-height: auto;
+    }
+
+
+    .btn {
+
+        padding:
+            13px
+            18px;
+
+        font-size: 14px;
+    }
+
+}

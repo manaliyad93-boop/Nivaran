@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NIVARAN - Associate Dean Dashboard</title>
+
+    <link rel="stylesheet" href="associate.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="topbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                N
+            </div>
+
+            <div class="brand-text">
+
+                <h1>
+                    NIVARAN
+                </h1>
+
+                <span>
+                    Grievance Redressal System
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-area">
+
+            <div class="profile-info">
+
+                <strong>
+                    Associate Dean
+                </strong>
+
+                <span>
+                    Associate Dean R&amp;D
+                </span>
+
+            </div>
+
+
+            <div class="profile-avatar">
+                AD
+            </div>
+
+
+            <button
+                class="logout-btn"
+                type="button"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         DASHBOARD LAYOUT
+    ====================================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-title">
+                ASSOCIATE DEAN
+            </div>
+
+
+            <a
+                href="#"
+                class="nav-item active"
+            >
+
+                <span class="nav-icon">
+                    ▦
+                </span>
+
+                Dashboard
+
+            </a>
+
+
+            <a
+                href="#referred"
+                class="nav-item"
+            >
+
+                <span class="nav-icon">
+                    ↗
+                </span>
+
+                Referred Cases
+
+            </a>
+
+
+            <a
+                href="#history"
+                class="nav-item"
+            >
+
+                <span class="nav-icon">
+                    ◷
+                </span>
+
+                Case History
+
+            </a>
+
+
+            <a
+                href="#resolution"
+                class="nav-item"
+            >
+
+                <span class="nav-icon">
+                    ✓
+                </span>
+
+                Resolution
+
+            </a>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN CONTENT
+        ================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 PAGE HEADING
+            ================================================== -->
+
+            <section class="page-heading">
+
+
+                <div>
+
+                    <h2>
+                        Associate Dean Dashboard
+                    </h2>
+
+                    <p>
+                        Review escalated and referred grievances,
+                        take appropriate action and monitor resolution.
+                    </p>
+
+                </div>
+
+
+                <div class="date-box">
+
+                    <span>
+                        Today
+                    </span>
+
+                    <strong>
+                        11 Aug 2026
+                    </strong>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SUMMARY CARDS
+            ================================================== -->
+
+            <section class="summary-grid">
+
+
+                <!-- Escalated -->
+
+                <div class="summary-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            Escalated Cases
+                        </span>
+
+                        <div class="card-icon blue">
+                            ↗
+                        </div>
+
+                    </div>
+
+
+                    <h3>
+                        18
+                    </h3>
+
+
+                    <p>
+                        Cases referred for review
+                    </p>
+
+                </div>
+
+
+
+                <!-- Under Review -->
+
+                <div class="summary-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            Under Review
+                        </span>
+
+                        <div class="card-icon orange">
+                            🔍
+                        </div>
+
+                    </div>
+
+
+                    <h3>
+                        07
+                    </h3>
+
+
+                    <p>
+                        Cases currently under review
+                    </p>
+
+                </div>
+
+
+
+                <!-- Action Required -->
+
+                <div class="summary-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            Action Required
+                        </span>
+
+                        <div class="card-icon red">
+                            !
+                        </div>
+
+                    </div>
+
+
+                    <h3>
+                        05
+                    </h3>
+
+
+                    <p>
+                        Cases requiring action
+                    </p>
+
+                </div>
+
+
+
+                <!-- Resolved -->
+
+                <div class="summary-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            Resolved
+                        </span>
+
+                        <div class="card-icon green">
+                            ✓
+                        </div>
+
+                    </div>
+
+
+                    <h3>
+                        06
+                    </h3>
+
+
+                    <p>
+                        Cases resolved by action
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ESCALATED / REFERRED CASES
+            ================================================== -->
+
+            <section
+                class="cases-section"
+                id="referred"
+            >
+
+
+                <div class="section-heading">
+
+
+                    <div>
+
+                        <h2>
+                            Escalated / Referred Cases
+                        </h2>
+
+                        <p>
+                            Cases forwarded for Associate Dean review.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="filter-btn"
+                        type="button"
+                    >
+                        Filter ▾
+                    </button>
+
+
+                </div>
+
+
+
+                <div class="table-container">
+
+
+                    <table>
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Grievance ID
+                                </th>
+
+                                <th>
+                                    Subject
+                                </th>
+
+                                <th>
+                                    Referred From
+                                </th>
+
+                                <th>
+                                    Date
+                                </th>
+
+                                <th>
+                                    Priority
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Action
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+
+                        <tbody>
+
+
+                            <!-- =================================
+                                 CASE 1
+                            ================================== -->
+
+                            <tr id="row-GRV-1024">
+
+                                <td>
+
+                                    <strong>
+                                        GRV-1024
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+                                    Scholarship Issue
+                                </td>
+
+
+                                <td>
+                                    Assistant Dean
+                                </td>
+
+
+                                <td>
+                                    10 Aug 2026
+                                </td>
+
+
+                                <td>
+
+                                    <span class="priority high">
+                                        High
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span
+                                        class="status review"
+                                        id="status-GRV-1024"
+                                    >
+                                        Under Review
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+
+                                        <button
+                                            class="view-btn"
+                                            type="button"
+                                        >
+                                            Open
+                                        </button>
+
+
+                                        <button
+                                            class="forward-btn"
+                                            type="button"
+                                            onclick="openForwardModal(
+                                                'GRV-1024',
+                                                'Scholarship Issue'
+                                            )"
+                                        >
+                                            ↗ Forward to Dean
+                                        </button>
+
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 CASE 2
+                            ================================== -->
+
+                            <tr id="row-GRV-1019">
+
+                                <td>
+
+                                    <strong>
+                                        GRV-1019
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+                                    Examination Complaint
+                                </td>
+
+
+                                <td>
+                                    Assistant Dean
+                                </td>
+
+
+                                <td>
+                                    09 Aug 2026
+                                </td>
+
+
+                                <td>
+
+                                    <span class="priority high">
+                                        High
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span
+                                        class="status action"
+                                        id="status-GRV-1019"
+                                    >
+                                        Action Required
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+
+                                        <button
+                                            class="view-btn"
+                                            type="button"
+                                        >
+                                            Open
+                                        </button>
+
+
+                                        <button
+                                            class="forward-btn"
+                                            type="button"
+                                            onclick="openForwardModal(
+                                                'GRV-1019',
+                                                'Examination Complaint'
+                                            )"
+                                        >
+                                            ↗ Forward to Dean
+                                        </button>
+
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 CASE 3 - RESOLVED
+                            ================================== -->
+
+                            <tr id="row-GRV-1014">
+
+                                <td>
+
+                                    <strong>
+                                        GRV-1014
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+                                    Department Issue
+                                </td>
+
+
+                                <td>
+                                    Manager
+                                </td>
+
+
+                                <td>
+                                    08 Aug 2026
+                                </td>
+
+
+                                <td>
+
+                                    <span class="priority medium">
+                                        Medium
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status resolved">
+                                        Resolved
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button
+                                        class="view-btn"
+                                        type="button"
+                                    >
+                                        History
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 CASE 4
+                            ================================== -->
+
+                            <tr id="row-GRV-1009">
+
+                                <td>
+
+                                    <strong>
+                                        GRV-1009
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+                                    Fee Related Complaint
+                                </td>
+
+
+                                <td>
+                                    Assistant Dean
+                                </td>
+
+
+                                <td>
+                                    07 Aug 2026
+                                </td>
+
+
+                                <td>
+
+                                    <span class="priority medium">
+                                        Medium
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span
+                                        class="status review"
+                                        id="status-GRV-1009"
+                                    >
+                                        Under Review
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+
+                                        <button
+                                            class="view-btn"
+                                            type="button"
+                                        >
+                                            Open
+                                        </button>
+
+
+                                        <button
+                                            class="forward-btn"
+                                            type="button"
+                                            onclick="openForwardModal(
+                                                'GRV-1009',
+                                                'Fee Related Complaint'
+                                            )"
+                                        >
+                                            ↗ Forward to Dean
+                                        </button>
+
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CASE HISTORY
+            ================================================== -->
+
+            <section
+                class="history-section"
+                id="history"
+            >
+
+
+                <div class="section-heading">
+
+
+                    <div>
+
+                        <h2>
+                            Case History
+                        </h2>
+
+                        <p>
+                            Track previous actions and referrals.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="history-card">
+
+
+                    <div class="history-header">
+
+
+                        <div>
+
+                            <span class="case-id">
+                                GRV-1014
+                            </span>
+
+                            <h3>
+                                Department Issue
+                            </h3>
+
+                        </div>
+
+
+                        <span class="status resolved">
+                            Resolved
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="timeline">
+
+
+                        <!-- Timeline Item 1 -->
+
+                        <div class="timeline-item">
+
+
+                            <div class="timeline-dot"></div>
+
+
+                            <div>
+
+                                <strong>
+                                    Case Escalated
+                                </strong>
+
+                                <p>
+                                    Case was referred for higher-level review.
+                                </p>
+
+                                <span>
+                                    08 Aug 2026 • 10:20 AM
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- Timeline Item 2 -->
+
+                        <div class="timeline-item">
+
+
+                            <div class="timeline-dot"></div>
+
+
+                            <div>
+
+                                <strong>
+                                    Action Taken
+                                </strong>
+
+                                <p>
+                                    Appropriate action recorded against
+                                    the grievance.
+                                </p>
+
+                                <span>
+                                    09 Aug 2026 • 01:40 PM
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- Timeline Item 3 -->
+
+                        <div class="timeline-item">
+
+
+                            <div class="timeline-dot"></div>
+
+
+                            <div>
+
+                                <strong>
+                                    Resolution Recorded
+                                </strong>
+
+                                <p>
+                                    Case marked as resolved.
+                                </p>
+
+                                <span>
+                                    10 Aug 2026 • 03:15 PM
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ACTION / RESOLUTION
+            ================================================== -->
+
+            <section
+                class="action-section"
+                id="resolution"
+            >
+
+
+                <div class="section-heading">
+
+
+                    <div>
+
+                        <h2>
+                            Case Action &amp; Resolution
+                        </h2>
+
+                        <p>
+                            Take action on escalated or referred cases.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="action-grid">
+
+
+                    <!-- Review -->
+
+                    <div class="action-card">
+
+
+                        <div class="action-icon review-icon">
+                            🔍
+                        </div>
+
+
+                        <h3>
+                            Review Case
+                        </h3>
+
+
+                        <p>
+                            Examine complete case information
+                            and previous actions.
+                        </p>
+
+
+                        <button
+                            class="action-btn"
+                            type="button"
+                        >
+                            Review Case
+                        </button>
+
+
+                    </div>
+
+
+
+                    <!-- Take Action -->
+
+                    <div class="action-card">
+
+
+                        <div class="action-icon action-icon-box">
+                            ⚙
+                        </div>
+
+
+                        <h3>
+                            Take Action
+                        </h3>
+
+
+                        <p>
+                            Record the appropriate action
+                            for the referred grievance.
+                        </p>
+
+
+                        <button
+                            class="action-btn"
+                            type="button"
+                        >
+                            Take Action
+                        </button>
+
+
+                    </div>
+
+
+
+                    <!-- Resolution -->
+
+                    <div class="action-card">
+
+
+                        <div class="action-icon resolve-icon">
+                            ✓
+                        </div>
+
+
+                        <h3>
+                            Record Resolution
+                        </h3>
+
+
+                        <p>
+                            Record the final resolution
+                            after action has been completed.
+                        </p>
+
+
+                        <button
+                            class="action-btn success"
+                            type="button"
+                        >
+                            Resolve Case
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         FORWARD TO DEAN MODAL
+    ====================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="forwardModal"
+    >
+
+
+        <div
+            class="forward-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="forwardModalTitle"
+        >
+
+
+            <!-- =============================================
+                 MODAL HEADER
+            ============================================== -->
+
+            <div class="modal-header">
+
+
+                <div>
+
+                    <span class="modal-label">
+                        CASE ESCALATION
+                    </span>
+
+
+                    <h2 id="forwardModalTitle">
+                        Forward Grievance to Dean
+                    </h2>
+
+
+                    <p>
+                        Forward this grievance to Dean R&amp;D
+                        for higher-level review and decision.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="modal-close"
+                    type="button"
+                    onclick="closeForwardModal()"
+                    aria-label="Close"
+                >
+                    ×
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 CASE INFORMATION
+            ============================================== -->
+
+            <div class="forward-case-info">
+
+
+                <div class="case-info-item">
+
+                    <span>
+                        Grievance ID
+                    </span>
+
+                    <strong id="forwardGrievanceId">
+                        GRV-1024
+                    </strong>
+
+                </div>
+
+
+                <div class="case-info-item">
+
+                    <span>
+                        Subject
+                    </span>
+
+                    <strong id="forwardSubject">
+                        Scholarship Issue
+                    </strong>
+
+                </div>
+
+
+                <div class="case-info-item">
+
+                    <span>
+                        Forward To
+                    </span>
+
+                    <strong>
+                        Dean R&amp;D
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 REASON
+            ============================================== -->
+
+            <div class="form-group">
+
+
+                <label for="forwardReason">
+
+                    Reason for Forwarding
+
+                    <span>
+                        *
+                    </span>
+
+                </label>
+
+
+                <select id="forwardReason">
+
+                    <option value="">
+                        Select reason
+                    </option>
+
+                    <option value="higher_authority">
+                        Requires higher authority decision
+                    </option>
+
+                    <option value="complex_case">
+                        Complex / sensitive case
+                    </option>
+
+                    <option value="unresolved">
+                        Issue could not be resolved at current level
+                    </option>
+
+                    <option value="policy_decision">
+                        Requires policy-level decision
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 REMARKS
+            ============================================== -->
+
+            <div class="form-group">
+
+
+                <label for="forwardRemarks">
+
+                    Remarks
+
+                    <span class="optional">
+                        Optional
+                    </span>
+
+                </label>
+
+
+                <textarea
+                    id="forwardRemarks"
+                    rows="4"
+                    placeholder="Add remarks or important information for the Dean..."
+                ></textarea>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 WARNING
+            ============================================== -->
+
+            <div class="forward-warning">
+
+
+                <span class="warning-icon">
+                    !
+                </span>
+
+
+                <p>
+                    Once forwarded, this grievance will be
+                    moved to the Dean R&amp;D review queue and
+                    the action will be recorded in the case
+                    history.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 MODAL ACTION BUTTONS
+            ============================================== -->
+
+            <div class="modal-actions">
+
+
+                <button
+                    class="cancel-btn"
+                    type="button"
+                    onclick="closeForwardModal()"
+                >
+                    Cancel
+                </button>
+
+
+                <button
+                    class="confirm-forward-btn"
+                    type="button"
+                    onclick="forwardToDean()"
+                >
+                    ↗ Forward to Dean
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         SUCCESS TOAST
+    ====================================================== -->
+
+    <div
+        class="success-toast"
+        id="successToast"
+    >
+
+        <div class="toast-icon">
+            ✓
+        </div>
+
+
+        <div class="toast-content">
+
+            <strong>
+                Grievance Forwarded
+            </strong>
+
+            <span id="toastMessage">
+                Case has been forwarded to Dean R&amp;D.
+            </span>
+
+        </div>
+
+
+        <button
+            type="button"
+            onclick="closeToast()"
+            class="toast-close"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+
+        /* =================================================
+           GLOBAL VARIABLES
+        ================================================= */
+
+        let selectedGrievanceId = "";
+        let selectedSubject = "";
+
+
+
+        /* =================================================
+           OPEN FORWARD MODAL
+        ================================================= */
+
+        function openForwardModal(grievanceId, subject) {
+
+
+            selectedGrievanceId = grievanceId;
+
+            selectedSubject = subject;
+
+
+            document.getElementById(
+                "forwardGrievanceId"
+            ).textContent = grievanceId;
+
+
+            document.getElementById(
+                "forwardSubject"
+            ).textContent = subject;
+
+
+            document.getElementById(
+                "forwardReason"
+            ).value = "";
+
+
+            document.getElementById(
+                "forwardRemarks"
+            ).value = "";
+
+
+            document
+                .getElementById("forwardModal")
+                .classList.add("show");
+
+
+            document.body.classList.add("modal-open");
+
+
+        }
+
+
+
+        /* =================================================
+           CLOSE FORWARD MODAL
+        ================================================= */
+
+        function closeForwardModal() {
+
+
+            document
+                .getElementById("forwardModal")
+                .classList.remove("show");
+
+
+            document.body.classList.remove("modal-open");
+
+
+        }
+
+
+
+        /* =================================================
+           FORWARD TO DEAN
+        ================================================= */
+
+        function forwardToDean() {
+
+
+            const reason =
+                document.getElementById(
+                    "forwardReason"
+                ).value;
+
+
+            const remarks =
+                document.getElementById(
+                    "forwardRemarks"
+                ).value.trim();
+
+
+
+            /* ---------------------------------------------
+               VALIDATE REASON
+            ---------------------------------------------- */
+
+            if (!reason) {
+
+                alert(
+                    "Please select a reason for forwarding."
+                );
+
+                document
+                    .getElementById("forwardReason")
+                    .focus();
+
+                return;
+
+            }
+
+
+
+            /* ---------------------------------------------
+               DEMO DATA
+            ---------------------------------------------- */
+
+            const forwardData = {
+
+                grievance_id:
+                    selectedGrievanceId,
+
+                subject:
+                    selectedSubject,
+
+                forwarded_from:
+                    "Associate Dean",
+
+                forwarded_to:
+                    "Dean R&D",
+
+                reason:
+                    reason,
+
+                remarks:
+                    remarks,
+
+                status:
+                    "Escalated",
+
+                timestamp:
+                    new Date().toISOString()
+
+            };
+
+
+
+            /* ---------------------------------------------
+               CONSOLE
+            ---------------------------------------------- */
+
+            console.log(
+                "Forwarding grievance:",
+                forwardData
+            );
+
+
+
+            /* ---------------------------------------------
+               UPDATE TABLE STATUS
+            ---------------------------------------------- */
+
+            const statusElement =
+                document.getElementById(
+                    "status-" + selectedGrievanceId
+                );
+
+
+            if (statusElement) {
+
+                statusElement.textContent =
+                    "Forwarded to Dean";
+
+                statusElement.classList.remove(
+                    "review",
+                    "action",
+                    "resolved"
+                );
+
+                statusElement.classList.add(
+                    "forwarded"
+                );
+
+            }
+
+
+
+            /* ---------------------------------------------
+               HIDE FORWARD BUTTON
+            ---------------------------------------------- */
+
+            const row =
+                document.getElementById(
+                    "row-" + selectedGrievanceId
+                );
+
+
+            if (row) {
+
+                const forwardButton =
+                    row.querySelector(
+                        ".forward-btn"
+                    );
+
+
+                if (forwardButton) {
+
+                    forwardButton.textContent =
+                        "✓ Forwarded";
+
+                    forwardButton.disabled =
+                        true;
+
+                    forwardButton.classList.add(
+                        "forwarded-btn"
+                    );
+
+                }
+
+            }
+
+
+
+            /* ---------------------------------------------
+               CLOSE MODAL
+            ---------------------------------------------- */
+
+            closeForwardModal();
+
+
+
+            /* ---------------------------------------------
+               SHOW SUCCESS TOAST
+            ---------------------------------------------- */
+
+            showToast(
+                selectedGrievanceId +
+                " has been forwarded to Dean R&D."
+            );
+
+
+            /*
+             * =================================================
+             * FUTURE BACKEND API
+             * =================================================
+             *
+             * Later replace the demo section with:
+             *
+             * fetch(
+             *     "/api/grievances/" +
+             *     selectedGrievanceId +
+             *     "/escalate",
+             *     {
+             *         method: "POST",
+             *         headers: {
+             *             "Content-Type":
+             *                 "application/json"
+             *         },
+             *         body: JSON.stringify({
+             *             to_role: "dean_rd",
+             *             reason: reason,
+             *             remarks: remarks
+             *         })
+             *     }
+             * )
+             *
+             * =================================================
+             */
+
+        }
+
+
+
+        /* =================================================
+           SUCCESS TOAST
+        ================================================= */
+
+        function showToast(message) {
+
+
+            const toast =
+                document.getElementById(
+                    "successToast"
+                );
+
+
+            document.getElementById(
+                "toastMessage"
+            ).textContent = message;
+
+
+            toast.classList.add(
+                "show"
+            );
+
+
+            setTimeout(
+                function () {
+
+                    closeToast();
+
+                },
+                4500
+            );
+
+        }
+
+
+
+        /* =================================================
+           CLOSE TOAST
+        ================================================= */
+
+        function closeToast() {
+
+
+            document
+                .getElementById("successToast")
+                .classList.remove("show");
+
+
+        }
+
+
+
+        /* =================================================
+           CLOSE MODAL ON OUTSIDE CLICK
+        ================================================= */
+
+        document
+            .getElementById("forwardModal")
+            .addEventListener(
+                "click",
+                function (event) {
+
+
+                    if (
+                        event.target ===
+                        this
+                    ) {
+
+                        closeForwardModal();
+
+                    }
+
+
+                }
+            );
+
+
+
+        /* =================================================
+           ESC KEY
+        ================================================= */
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+
+                if (
+                    event.key ===
+                    "Escape"
+                ) {
+
+                    closeForwardModal();
+
+                }
+
+
+            }
+        );
+
+
+
+        /* =================================================
+           LOGOUT DEMO
+        ================================================= */
+
+        document
+            .querySelector(".logout-btn")
+            .addEventListener(
+                "click",
+                function () {
+
+                    alert(
+                        "Logout functionality will be connected with the backend."
+                    );
+
+                }
+            );
+
+
+    </script>
+
+
+</body>
+
+</html>

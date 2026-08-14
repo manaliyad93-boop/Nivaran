@@ -1,0 +1,633 @@
+/* =========================================================
+   NIVARAN - LOADING SCREEN
+   MAROON + CHAMPAGNE GOLD + IVORY
+   ELEGANT UNIVERSITY THEME
+========================================================= */
+
+
+/* =========================================================
+   COLOR PALETTE
+========================================================= */
+
+:root {
+
+    /* MAROON */
+    --maroon-dark: #26050D;
+    --maroon-deep: #350914;
+    --maroon: #4A0E1B;
+    --maroon-light: #64172A;
+
+    /* CHAMPAGNE GOLD */
+    --champagne: #D6B36A;
+    --champagne-light: #E8D6A8;
+    --champagne-soft: #F3E8CC;
+
+    /* IVORY */
+    --ivory: #FFFDF5;
+    --ivory-warm: #F7F1E3;
+    --ivory-dark: #EDE4D3;
+
+    /* TEXT */
+    --text-dark: #302326;
+    --text-muted: #74676A;
+
+    /* WHITE */
+    --white: #FFFFFF;
+
+    /* BORDER */
+    --border: #E3D8C5;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+
+    width: 100vw;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: var(--ivory);
+}
+
+
+/* =========================================================
+   MAIN LOADER SCREEN
+========================================================= */
+
+.loader-screen {
+
+    position: relative;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 40%,
+            rgba(214, 179, 106, 0.10),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(74, 14, 27, 0.08),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            var(--ivory),
+            var(--ivory-warm)
+        );
+}
+
+
+/* =========================================================
+   DECORATIVE GOLD CIRCLE
+========================================================= */
+
+.loader-screen::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+
+    height: 520px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(214, 179, 106, 0.22);
+
+    top: -300px;
+
+    right: -170px;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   SECOND DECORATIVE CIRCLE
+========================================================= */
+
+.loader-screen::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+
+    height: 400px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(74, 14, 27, 0.08);
+
+    bottom: -270px;
+
+    left: -170px;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   LOADING CARD
+========================================================= */
+
+.loader-screen {
+
+    /* Existing full-screen layout stays intact */
+
+}
+
+
+/* =========================================================
+   CENTRAL CONTENT CARD
+========================================================= */
+
+.loader-screen > .university,
+.loader-screen > .logo,
+.loader-screen > .subtitle,
+.loader-screen > .loading-area,
+.loader-screen > .bottom-text {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* =========================================================
+   UNIVERSITY NAME
+========================================================= */
+
+.university {
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    margin-bottom: 26px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(74, 14, 27, 0.06);
+
+    border:
+        1px solid
+        rgba(214, 179, 106, 0.65);
+
+    color: var(--maroon);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+
+    box-shadow:
+        0 3px 12px
+        rgba(74, 14, 27, 0.05);
+}
+
+
+/* =========================================================
+   MAIN NIVARAN LOGO
+========================================================= */
+
+.logo {
+
+    position: relative;
+
+    font-size: 52px;
+
+    font-weight: 800;
+
+    letter-spacing: 6px;
+
+    line-height: 1;
+
+    margin-bottom: 12px;
+
+    color: var(--maroon-dark);
+
+}
+
+
+/* Champagne underline */
+
+.logo::after {
+
+    content: "";
+
+    display: block;
+
+    width: 55px;
+
+    height: 3px;
+
+    margin: 14px auto 0;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--champagne),
+            var(--champagne-light)
+        );
+
+}
+
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.subtitle {
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2.5px;
+
+    color: var(--maroon-light);
+
+    text-transform: uppercase;
+
+    margin-bottom: 42px;
+
+}
+
+
+/* =========================================================
+   LOADING AREA
+========================================================= */
+
+.loading-area {
+
+    width: 330px;
+
+    max-width: 90vw;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-bottom: 32px;
+
+}
+
+
+/* =========================================================
+   LOADING TEXT
+========================================================= */
+
+.loading-text {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: var(--text-dark);
+
+    letter-spacing: 0.7px;
+
+    margin-bottom: 13px;
+
+}
+
+
+/* =========================================================
+   ANIMATED DOTS
+========================================================= */
+
+.dots span {
+
+    display: inline-block;
+
+    color: var(--maroon);
+
+    font-weight: 800;
+
+    animation:
+        waveDots 1.4s
+        infinite
+        ease-in-out;
+
+}
+
+
+.dots span:nth-child(1) {
+
+    animation-delay: 0s;
+
+}
+
+
+.dots span:nth-child(2) {
+
+    animation-delay: 0.2s;
+
+}
+
+
+.dots span:nth-child(3) {
+
+    animation-delay: 0.4s;
+
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.progress {
+
+    width: 100%;
+
+    height: 5px;
+
+    background:
+        var(--ivory-dark);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(214, 179, 106, 0.25);
+
+}
+
+
+/* =========================================================
+   PROGRESS BAR FILL
+========================================================= */
+
+.progress-bar {
+
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--maroon-dark),
+            var(--maroon),
+            var(--champagne)
+        );
+
+    animation:
+        fillLine 3s
+        cubic-bezier(
+            0.4,
+            0,
+            0.2,
+            1
+        )
+        forwards;
+
+}
+
+
+/* =========================================================
+   BOTTOM SYSTEM TEXT
+========================================================= */
+
+.bottom-text {
+
+    width: 330px;
+
+    max-width: 90vw;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid
+        var(--border);
+
+    color: var(--text-muted);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   SMALL GOLD DECORATIVE LINE
+========================================================= */
+
+.bottom-text::before {
+
+    content: "";
+
+    display: block;
+
+    width: 25px;
+
+    height: 2px;
+
+    background: var(--champagne);
+
+    margin: 0 auto 12px;
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================================================
+   PROGRESS ANIMATION
+========================================================= */
+
+@keyframes fillLine {
+
+    0% {
+
+        width: 0%;
+
+    }
+
+    40% {
+
+        width: 45%;
+
+    }
+
+    80% {
+
+        width: 85%;
+
+    }
+
+    100% {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =========================================================
+   DOT ANIMATION
+========================================================= */
+
+@keyframes waveDots {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+        opacity: 0.35;
+
+    }
+
+    50% {
+
+        transform: translateY(-3px);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .loader-screen {
+
+        padding: 20px;
+
+    }
+
+
+    .university {
+
+        font-size: 9px;
+
+        padding: 7px 13px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .logo {
+
+        font-size: 38px;
+
+        letter-spacing: 4px;
+
+    }
+
+
+    .subtitle {
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .loading-area {
+
+        width: 280px;
+
+    }
+
+
+    .bottom-text {
+
+        width: 280px;
+
+        font-size: 9px;
+
+    }
+
+}
