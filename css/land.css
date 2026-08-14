@@ -1,0 +1,1021 @@
+/* =========================================================
+   NIVARAN - LANDING PAGE
+   PREMIUM MAROON + CHAMPAGNE GOLD + IVORY THEME
+========================================================= */
+
+
+/* =========================================================
+   COLOR PALETTE
+========================================================= */
+
+:root {
+
+    /* MAROON */
+    --maroon-dark: #2B0710;
+    --maroon-deep: #3A0A16;
+    --maroon: #4A0E1B;
+    --maroon-light: #68182A;
+
+    /* CHAMPAGNE GOLD */
+    --champagne: #D6B36A;
+    --champagne-light: #E8D6A8;
+    --champagne-soft: #F3E8CC;
+
+    /* IVORY */
+    --ivory: #FFFDF5;
+    --ivory-warm: #F7F1E3;
+    --ivory-dark: #EEE5D3;
+
+    /* TEXT */
+    --text-dark: #302326;
+    --text-muted: #74676A;
+    --text-light: #F4EEE5;
+
+    /* WHITE */
+    --white: #FFFFFF;
+
+    /* BORDER */
+    --border: #E3D8C5;
+
+    /* SHADOW */
+    --shadow: rgba(43, 7, 16, 0.10);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--ivory);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   HEADER / NAVIGATION
+========================================================= */
+
+.univ-header {
+    background:
+        linear-gradient(
+            135deg,
+            var(--maroon-dark),
+            var(--maroon-deep)
+        );
+
+    color: var(--white);
+
+    padding: 15px 5%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    border-bottom: 1px solid
+        rgba(214, 179, 106, 0.35);
+
+    box-shadow:
+        0 5px 20px rgba(43, 7, 16, 0.20);
+}
+
+.header-container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   UNIVERSITY LOGO SECTION
+========================================================= */
+
+.logo-section {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.logo-box {
+    width: 64px;
+    height: 64px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--champagne),
+            #C49A4A
+        );
+
+    border-radius: 50%;
+
+    border: 2px solid var(--champagne-light);
+
+    padding: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 14px rgba(214, 179, 106, 0.20);
+}
+
+.logo-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+
+    display: block;
+}
+
+.univ-title h2 {
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: var(--white);
+}
+
+.univ-title p {
+    font-size: 13px;
+
+    color: var(--champagne-light);
+
+    margin-top: 2px;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+}
+
+.nav-links a {
+    color: #F1E8D9;
+
+    text-decoration: none;
+
+    margin-left: 28px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    transition: 0.3s ease;
+
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--champagne);
+
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--champagne-light);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+    position: relative;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(214, 179, 106, 0.14),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(104, 24, 42, 0.45),
+            transparent 38%
+        ),
+
+        linear-gradient(
+            135deg,
+            var(--maroon-dark) 0%,
+            var(--maroon-deep) 50%,
+            var(--maroon) 100%
+        );
+
+    color: var(--white);
+
+    padding: 110px 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO DECORATIVE GOLD GLOW
+========================================================= */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -260px;
+    right: -120px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(214, 179, 106, 0.15),
+            transparent 68%
+        );
+
+    pointer-events: none;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    bottom: -220px;
+    left: -120px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(214, 179, 106, 0.08),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+    max-width: 820px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   HERO BADGE
+========================================================= */
+
+.badge {
+    background:
+        rgba(214, 179, 106, 0.10);
+
+    padding: 7px 18px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    border: 1px solid
+        rgba(214, 179, 106, 0.55);
+
+    color: var(--champagne-light);
+
+    letter-spacing: 0.2px;
+
+    box-shadow:
+        0 0 18px rgba(214, 179, 106, 0.07);
+}
+
+
+/* =========================================================
+   HERO HEADING
+========================================================= */
+
+.hero h1 {
+    font-size: 44px;
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: -0.7px;
+
+    color: var(--white);
+}
+
+.hero p {
+    font-size: 18px;
+
+    color: #EDE4D8;
+
+    margin-bottom: 38px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 16px;
+}
+
+.btn {
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    font-size: 16px;
+
+    transition: 0.3s ease;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.btn-primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--champagne),
+            #C49A4A
+        );
+
+    color: var(--maroon-dark);
+
+    border: 1px solid
+        var(--champagne-light);
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.22);
+}
+
+.btn-primary:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--champagne-light),
+            var(--champagne)
+        );
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(214, 179, 106, 0.25);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.btn-secondary {
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    color: var(--white);
+
+    border: 1px solid
+        rgba(214, 179, 106, 0.55);
+
+    backdrop-filter: blur(5px);
+}
+
+.btn-secondary:hover {
+    background:
+        rgba(214, 179, 106, 0.12);
+
+    border-color: var(--champagne);
+
+    color: var(--champagne-light);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   GENERAL CONTAINER
+========================================================= */
+
+.container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 75px 20px;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+
+    color: var(--maroon-dark);
+
+    margin-bottom: 10px;
+
+    font-weight: 700;
+}
+
+.section-title h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+
+    height: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--champagne),
+            #C49A4A
+        );
+
+    margin: 12px auto 0;
+
+    border-radius: 5px;
+}
+
+.section-title p {
+    color: var(--text-muted);
+
+    font-size: 16px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   FEATURES SECTION
+========================================================= */
+
+.features-section {
+    background: var(--ivory);
+}
+
+
+/* =========================================================
+   FEATURE CARDS
+========================================================= */
+
+.cards-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+}
+
+.info-card {
+    background: var(--white);
+
+    padding: 35px 28px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 10px 25px var(--shadow);
+
+    border: 1px solid var(--border);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Gold top line */
+
+.info-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--champagne),
+            var(--champagne-light)
+        );
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 16px 32px rgba(43, 7, 16, 0.12);
+
+    border-color: var(--champagne);
+}
+
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.card-icon {
+    font-size: 30px;
+
+    color: var(--champagne);
+
+    margin-bottom: 20px;
+
+    background: var(--maroon-dark);
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 5px 15px rgba(43, 7, 16, 0.15);
+}
+
+.info-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+
+    color: var(--maroon-dark);
+}
+
+.info-card p {
+    color: var(--text-muted);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROCESS SECTION
+========================================================= */
+
+.process-section {
+    background:
+        linear-gradient(
+            180deg,
+            var(--ivory-warm) 0%,
+            var(--ivory) 100%
+        );
+
+    border-top: 1px solid
+        rgba(214, 179, 106, 0.20);
+
+    border-bottom: 1px solid
+        rgba(214, 179, 106, 0.20);
+}
+
+
+/* =========================================================
+   STEPS GRID
+========================================================= */
+
+.steps-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+.step-card {
+    background: var(--white);
+
+    padding: 32px;
+
+    border-radius: 14px;
+
+    position: relative;
+
+    border: 1px solid var(--border);
+
+    border-top: 4px solid var(--champagne);
+
+    box-shadow:
+        0 8px 22px rgba(43, 7, 16, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 28px rgba(43, 7, 16, 0.11);
+
+    border-top-color: var(--maroon);
+}
+
+
+/* =========================================================
+   STEP NUMBER
+========================================================= */
+
+.step-num {
+    font-size: 28px;
+
+    font-weight: 800;
+
+    color: var(--champagne);
+
+    margin-bottom: 10px;
+
+    letter-spacing: 1px;
+}
+
+.step-card h3 {
+    margin-bottom: 10px;
+
+    color: var(--maroon-dark);
+
+    font-size: 19px;
+}
+
+.step-card h3 a {
+    color: inherit;
+
+    transition: 0.3s ease;
+}
+
+.step-card h3 a:hover {
+    color: var(--maroon-light);
+}
+
+.step-card p {
+    color: var(--text-muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   HELP BANNER
+========================================================= */
+
+.help-banner {
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(214, 179, 106, 0.12),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            var(--maroon),
+            var(--maroon-dark)
+        );
+
+    color: var(--white);
+
+    padding: 55px 20px;
+
+    border-top: 1px solid
+        rgba(214, 179, 106, 0.35);
+}
+
+.banner-box {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.banner-box h2 {
+    color: var(--white);
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+}
+
+.banner-box p {
+    color: #E8DED2;
+}
+
+.contact-info {
+    padding-left: 25px;
+
+    border-left: 2px solid
+        rgba(214, 179, 106, 0.45);
+}
+
+.contact-info p {
+    font-size: 15px;
+
+    margin-top: 8px;
+
+    color: var(--champagne-light);
+}
+
+.contact-info i {
+    color: var(--champagne);
+
+    margin-right: 8px;
+
+    width: 18px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    text-align: center;
+
+    padding: 22px 20px;
+
+    background: #1D050B;
+
+    color: #BBAEA2;
+
+    font-size: 14px;
+
+    border-top: 1px solid
+        rgba(214, 179, 106, 0.20);
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .header-container,
+    .banner-box {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    .nav-links a {
+        margin: 0 8px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 60px 20px;
+    }
+
+    .contact-info {
+        padding-left: 0;
+
+        border-left: none;
+
+        border-top: 1px solid
+            rgba(214, 179, 106, 0.35);
+
+        padding-top: 15px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .univ-header {
+        padding: 12px 15px;
+    }
+
+    .logo-section {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .logo-box {
+        font-size: 18px;
+
+        padding: 8px 14px;
+    }
+
+    .univ-title h2 {
+        font-size: 15px;
+    }
+
+    .univ-title p {
+        font-size: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+
+        margin: 0 5px;
+    }
+
+    .hero {
+        padding: 70px 18px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+    .badge {
+        font-size: 12px;
+
+        padding: 6px 13px;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .section-title p {
+        font-size: 14px;
+    }
+
+    .info-card,
+    .step-card {
+        padding: 28px 22px;
+    }
+
+    .banner-box h2 {
+        font-size: 23px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+}

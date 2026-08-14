@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NIVARAN - User Dashboard</title>
+
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+
+    <!-- =================================
+         MAIN SCREEN
+    ================================= -->
+
+    <div class="screen">
+
+        <!-- =================================
+             HEADER
+        ================================= -->
+
+        <header class="header">
+
+            <div class="secure">
+                Secure Grievance Management System
+            </div>
+
+            <div class="logo">
+                N<span>IVARAN</span>
+            </div>
+
+            <div class="tagline">
+                Applicant Dashboard
+            </div>
+
+        </header>
+
+
+        <!-- =================================
+             USER DASHBOARD
+        ================================= -->
+
+        <main class="dashboard">
+
+            <!-- USER WELCOME -->
+
+            <section class="welcome-section">
+
+                <div>
+                    <h2>Welcome, User</h2>
+
+                    <p>
+                        Submit and track your grievances
+                    </p>
+                </div>
+
+                <a href="submit-grievance.html" class="submit-btn">
+                    + Submit Grievance
+                </a>
+
+            </section>
+
+
+            <!-- =================================
+                 GRIEVANCE SUMMARY
+            ================================= -->
+
+            <section class="summary">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon blue">
+                        #
+                    </div>
+
+                    <div>
+                        <h3>03</h3>
+                        <p>Total Grievances</p>
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon yellow">
+                        !
+                    </div>
+
+                    <div>
+                        <h3>01</h3>
+                        <p>Pending</p>
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon orange">
+                        ↻
+                    </div>
+
+                    <div>
+                        <h3>01</h3>
+                        <p>In Progress</p>
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+                        <h3>01</h3>
+                        <p>Resolved</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 MY GRIEVANCES
+            ================================= -->
+
+            <section class="grievances-section">
+
+                <div class="section-heading">
+
+                    <div>
+                        <h2>My Grievances</h2>
+
+                        <p>
+                            Track the status and progress of your grievances
+                        </p>
+                    </div>
+
+                    <a href="my-grievances.html" class="view-all">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <!-- =================================
+                     GRIEVANCE 1
+                ================================= -->
+
+                <div class="grievance-card">
+
+                    <div class="grievance-main">
+
+                        <div class="grievance-id">
+                            NV-2026-00124
+                        </div>
+
+                        <h3>
+                            Examination Related Issue
+                        </h3>
+
+                        <p>
+                            Submitted on 10 August 2026
+                        </p>
+
+                    </div>
+
+
+                    <div class="grievance-status">
+
+                        <span class="status pending">
+                            Pending
+                        </span>
+
+                        <p>
+                            Last updated: 10 Aug 2026
+                        </p>
+
+                    </div>
+
+
+                    <!-- TRACK BUTTON -->
+                    <a href="track.html" class="track-btn">
+                        Track
+                    </a>
+
+                </div>
+
+
+                <!-- =================================
+                     GRIEVANCE 2
+                ================================= -->
+
+                <div class="grievance-card">
+
+                    <div class="grievance-main">
+
+                        <div class="grievance-id">
+                            NV-2026-00118
+                        </div>
+
+                        <h3>
+                            Academic / Department Issue
+                        </h3>
+
+                        <p>
+                            Submitted on 07 August 2026
+                        </p>
+
+                    </div>
+
+
+                    <div class="grievance-status">
+
+                        <span class="status progress">
+                            In Progress
+                        </span>
+
+                        <p>
+                            Last updated: 09 Aug 2026
+                        </p>
+
+                    </div>
+
+
+                    <!-- TRACK BUTTON -->
+                    <a href="track.html" class="track-btn">
+                        Track
+                    </a>
+
+                </div>
+
+
+                <!-- =================================
+                     GRIEVANCE 3
+                ================================= -->
+
+                <div class="grievance-card">
+
+                    <div class="grievance-main">
+
+                        <div class="grievance-id">
+                            NV-2026-00105
+                        </div>
+
+                        <h3>
+                            Fee Related Issue
+                        </h3>
+
+                        <p>
+                            Submitted on 01 August 2026
+                        </p>
+
+                    </div>
+
+
+                    <div class="grievance-status">
+
+                        <span class="status resolved">
+                            Resolved
+                        </span>
+
+                        <p>
+                            Last updated: 06 Aug 2026
+                        </p>
+
+                    </div>
+
+
+                    <!-- VIEW / TRACK BUTTON -->
+                    <a href="track.html" class="track-btn">
+                        View
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 QUICK ACTIONS
+            ================================= -->
+
+            <section class="quick-actions">
+
+                <h2>Quick Actions</h2>
+
+                <div class="action-grid">
+
+                    <a href="submit-grievance.html" class="action-card">
+
+                        <div class="action-icon blue">
+                            +
+                        </div>
+
+                        <div>
+                            <h3>Submit Grievance</h3>
+
+                            <p>
+                                Register a new grievance
+                            </p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="my-grievances.html" class="action-card">
+
+                        <div class="action-icon purple">
+                            #
+                        </div>
+
+                        <div>
+                            <h3>My Grievances</h3>
+
+                            <p>
+                                View all your grievances
+                            </p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="notifications.html" class="action-card">
+
+                        <div class="action-icon yellow">
+                            !
+                        </div>
+
+                        <div>
+                            <h3>Notifications</h3>
+
+                            <p>
+                                View recent updates
+                            </p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="profile.html" class="action-card">
+
+                        <div class="action-icon green">
+                            ●
+                        </div>
+
+                        <div>
+                            <h3>My Profile</h3>
+
+                            <p>
+                                View your profile
+                            </p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 RECENT NOTIFICATION
+            ================================= -->
+
+            <section class="notification-section">
+
+                <div class="section-heading">
+
+                    <div>
+                        <h2>Recent Notification</h2>
+
+                        <p>
+                            Latest updates related to your grievances
+                        </p>
+                    </div>
+
+                    <a href="notifications.html" class="view-all">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="notification-card">
+
+                    <div class="notification-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Grievance NV-2026-00118 has been updated
+                        </h3>
+
+                        <p>
+                            Your grievance is currently being processed.
+                        </p>
+
+                        <span>
+                            09 August 2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 FOOTER ACTIONS
+            ================================= -->
+
+            <div class="footer-actions">
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+                <a href="notifications.html">
+                    Notifications
+                </a>
+
+                <a href="logout.html" class="logout">
+                    Logout
+                </a>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
